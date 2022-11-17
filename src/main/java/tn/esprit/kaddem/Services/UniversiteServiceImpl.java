@@ -1,10 +1,14 @@
 package tn.esprit.kaddem.Services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.kaddem.Entities.Universite;
 import tn.esprit.kaddem.Repositories.UniversiteRepository;
 
 import java.util.List;
 
+@Service
+@AllArgsConstructor
 public class UniversiteServiceImpl implements IUniversiteService{
     UniversiteRepository universiteRepository;
 

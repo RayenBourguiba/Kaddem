@@ -1,10 +1,14 @@
 package tn.esprit.kaddem.Services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.kaddem.Entities.Equipe;
 import tn.esprit.kaddem.Repositories.EquipeRepository;
 
 import java.util.List;
 
+@Service
+@AllArgsConstructor
 public class EquipeServiceImpl implements IEquipeService{
     EquipeRepository equipeRepository;
 

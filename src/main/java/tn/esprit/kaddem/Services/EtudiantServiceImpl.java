@@ -1,10 +1,14 @@
 package tn.esprit.kaddem.Services;
 
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import tn.esprit.kaddem.Entities.Etudiant;
 import tn.esprit.kaddem.Repositories.EtudiantRepository;
 
 import java.util.List;
 
+@Service
+@AllArgsConstructor
 public class EtudiantServiceImpl implements IEtudiantService{
     EtudiantRepository etudiantRepository;
     @Override
